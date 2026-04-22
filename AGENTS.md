@@ -85,6 +85,10 @@ A task is done only when **all** of these are true:
   artifacts. They're already gitignored; keep it that way.
 - Don't disable or skip failing tests. Fix them.
 - Don't edit files under `vendor/` or `node_modules/`.
+- **Don't change the database strategy.** Runtime = MySQL via Sail
+  (`.env.example`). Tests = SQLite `:memory:` (`phpunit.xml`). Do not
+  flip `.env` to sqlite, do not add a sqlite fallback in production
+  code, and do not introduce DB-specific SQL that only works in one.
 
 ## 5. Running things
 
