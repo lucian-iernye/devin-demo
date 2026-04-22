@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrokerController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SupplierController;
 use Illuminate\Foundation\Application;
@@ -25,6 +26,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::resource('suppliers', SupplierController::class);
+    Route::resource('brokers', BrokerController::class);
 });
 
 require __DIR__.'/auth.php';

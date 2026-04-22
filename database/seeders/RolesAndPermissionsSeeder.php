@@ -52,7 +52,8 @@ class RolesAndPermissionsSeeder extends Seeder
                 'contracts.view', 'invoices.view',
             ],
             'broker' => [
-                'brokers.view', 'tariffs.view', 'rfqs.view',
+                'brokers.view', 'brokers.manage',
+                'tariffs.view', 'rfqs.view',
                 'quotes.view', 'quotes.manage',
                 'contracts.view', 'invoices.view', 'invoices.manage',
             ],

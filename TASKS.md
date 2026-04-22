@@ -7,7 +7,7 @@ Legend: `P0` = blocker, `P1` = next, `P2` = nice-to-have.
 
 ## Phase 1 — Fill out the CRUD skeletons
 
-- [ ] **P0 brokers(crud):** Build the Broker slice mirroring Supplier
+- [x] **P0 brokers(crud):** Build the Broker slice mirroring Supplier
       (controller, requests, policy, Inertia pages, tests).
 - [ ] **P0 buyers(crud):** Same for Buyer.
 - [ ] **P0 tariffs(crud):** Nested under suppliers. Only the owning
